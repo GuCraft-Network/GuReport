@@ -178,6 +178,7 @@ public class BuildReportMessage {
         kickTC.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§b移出该玩家").create()));
         tc.addExtra(kickTC);
 
+        TextComponent endLF = new TextComponent("\n"); // 不知道为什么设置的LINE没有按照预期换行.
         tc.addExtra(Report.getInstance().LINE);
         return tc;
     }
