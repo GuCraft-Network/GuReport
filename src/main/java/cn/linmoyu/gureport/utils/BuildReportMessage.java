@@ -139,11 +139,11 @@ public class BuildReportMessage {
         tc.addExtra(banTextTC);
 
         // 封禁 7天
-        TextComponent ban7DaysTC = new TextComponent("[7天] ");
-        ban7DaysTC.setColor(ChatColor.YELLOW);
-        ban7DaysTC.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/reportprocess " + reportId + " truecmd banip " + reportedUUID + " 7d " + config.getString("ban-reason")));
-        ban7DaysTC.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§e封禁该玩家7天").create()));
-        tc.addExtra(ban7DaysTC);
+        TextComponent banTempTimeTC = new TextComponent("[7天] ");
+        banTempTimeTC.setColor(ChatColor.YELLOW);
+        banTempTimeTC.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/reportprocess " + reportId + " truecmd banip " + reportedUUID + " 7d " + config.getString("ban-reason")));
+        banTempTimeTC.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§e封禁该玩家7天").create()));
+        tc.addExtra(banTempTimeTC);
 
         // 封禁 永久
         TextComponent banLifeTimeTC = new TextComponent("[永久] ");
@@ -158,11 +158,11 @@ public class BuildReportMessage {
         tc.addExtra(muteTextTC);
 
         // 禁言 7天
-        TextComponent mute7DaysTC = new TextComponent("[7天] ");
-        mute7DaysTC.setColor(ChatColor.YELLOW);
-        mute7DaysTC.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/reportprocess " + reportId + " truecmd mute " + reportedUUID + " 7d " + config.getString("mute-reason")));
-        mute7DaysTC.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§e禁言该玩家7天").create()));
-        tc.addExtra(mute7DaysTC);
+        TextComponent muteTempTimeTC = new TextComponent("[7天] ");
+        muteTempTimeTC.setColor(ChatColor.YELLOW);
+        muteTempTimeTC.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/reportprocess " + reportId + " truecmd mute " + reportedUUID + " 7d " + config.getString("mute-reason")));
+        muteTempTimeTC.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§e禁言该玩家7天").create()));
+        tc.addExtra(muteTempTimeTC);
 
         // 禁言 永久
         TextComponent muteLifeTimeTC = new TextComponent("[永久] ");
