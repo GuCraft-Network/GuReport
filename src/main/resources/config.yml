@@ -1,0 +1,37 @@
+redis:
+  host: 127.0.0.1
+  port: 6379
+  username: ""
+  # 如果提示密码报错, 并配置无误
+  # 请尝试将username设为"default"
+  password: ""
+  ssl: false
+  max-connections: 20
+  pool-config:
+    max-idle: 10
+    min-idle: 3
+
+# 使用举报指令冷却时间.
+report-cooldown: 20
+# Staff传送子服后使用的指令, 仅支持UUID.
+staff-teleport-command: "/tp %staffUUID% %reporterUUID%"
+# 举报列表显示数量.
+reports-per-page: 6
+# 聊天日志
+chatlog:
+  # 最多记录多少条
+  max-messages: 10
+  # 在举报消息的Hover里最多显示多少条
+  hover-in-page: 10
+  # 在聊天指令查询里最多显示多少条
+  command-in-page: 10
+  # 玩家离开服务器后是否清除他的聊天日志
+  after-discoonect-cleanlog: true
+
+default-report-reason: "默认原因/作弊"
+ban-reason: ""
+mute-reason: ""
+# I don't know why.
+# LiteBans requires me to provide a kick reason.
+# Maybe it's the config.yml's fault.
+kick-reason: "默认原因/作弊"

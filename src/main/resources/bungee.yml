@@ -1,0 +1,5 @@
+name: GuReport
+version: '1.0'
+main: cn.linmoyu.gureport.Report
+author: LinMoyu_
+depends: [ LuckPerms, RedisBungee ]
