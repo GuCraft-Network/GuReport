@@ -138,7 +138,7 @@ public class BuildReportMessage {
         banTextTC.setColor(ChatColor.WHITE);
         tc.addExtra(banTextTC);
 
-        // 封禁 7天
+        // 封禁 临时
         TextComponent banTempTimeTC = new TextComponent("[7天] ");
         banTempTimeTC.setColor(ChatColor.YELLOW);
         banTempTimeTC.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/reportprocess " + reportId + " truecmd banip " + reportedUUID + " 7d " + config.getString("ban-reason")));
@@ -157,7 +157,7 @@ public class BuildReportMessage {
         muteTextTC.setColor(ChatColor.WHITE);
         tc.addExtra(muteTextTC);
 
-        // 禁言 7天
+        // 禁言 临时
         TextComponent muteTempTimeTC = new TextComponent("[7天] ");
         muteTempTimeTC.setColor(ChatColor.YELLOW);
         muteTempTimeTC.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/reportprocess " + reportId + " truecmd mute " + reportedUUID + " 7d " + config.getString("mute-reason")));
