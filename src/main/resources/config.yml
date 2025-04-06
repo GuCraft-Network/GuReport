@@ -2,7 +2,7 @@ redis:
   host: 127.0.0.1
   port: 6379
   username: ""
-  # 如果提示密码报错, 并配置无误
+  # 如果Redis连接时提示无效的用户名/密码, 并配置无误
   # 请尝试将username设为"default"
   password: ""
   ssl: false
