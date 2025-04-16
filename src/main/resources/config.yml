@@ -28,6 +28,7 @@ chatlog:
   # 玩家离开服务器后是否清除他的聊天日志
   after-discoonect-cleanlog: true
 
+need-reason: false
 default-report-reason: "默认原因/作弊"
 ban-reason: ""
 mute-reason: ""

@@ -180,7 +180,7 @@ public class BuildReportMessage {
 
         TextComponent endLF = new TextComponent("\n"); // 不知道为什么设置的LINE没有按照预期换行.
         tc.addExtra(endLF);
-        
+
         tc.addExtra(Report.getInstance().LINE);
         return tc;
     }

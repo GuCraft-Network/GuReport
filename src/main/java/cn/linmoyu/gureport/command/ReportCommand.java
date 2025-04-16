@@ -52,9 +52,16 @@ public class ReportCommand extends Command implements TabExecutor {
             Report.sendMessageWithPrefix(reporter, "§c建议重启反代以应用配置, 重载命令不一定管用.");
             return;
         }
-        if (args.length < 1) {
-            Report.sendMessageWithPrefix(reporter, "§c用法: /report <玩家> [原因]");
-            return;
+        if (!config.getBoolean("need-reason")) {
+            if (args.length < 1) {
+                Report.sendMessageWithPrefix(reporter, "§c用法: /report <玩家> [原因]");
+                return;
+            }
+        } else {
+            if (args.length < 2) {
+                Report.sendMessageWithPrefix(reporter, "§c用法: /report <玩家> [原因]");
+                return;
+            }
         }
 
         String targetName = args[0];

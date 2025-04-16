@@ -26,7 +26,7 @@ public class Report extends Plugin implements Listener {
 
     public HashSet<ProxiedPlayer> blockReportStaffs = new HashSet<>();
     public String PREFIX = "§b§l举报系统 §7» ";
-    public String LINE = "\n§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-\n";
+    public String LINE = "\n§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-§6-\n";
     public String BUNGEE_CHANNEL_NAME = "GUSTAFF-REPORT";
 
     public static void sendMessageWithPrefix(ProxiedPlayer player, String message) {
