@@ -30,7 +30,7 @@ public class Report extends Plugin implements Listener {
     public String BUNGEE_CHANNEL_NAME = "GUSTAFF-REPORT";
 
     public static void sendMessageWithPrefix(ProxiedPlayer player, String message) {
-        player.sendMessage(TextComponent.fromLegacy(Report.getInstance().PREFIX + message));
+        player.sendMessage(new TextComponent(Report.getInstance().PREFIX + message));
     }
 
     @Override

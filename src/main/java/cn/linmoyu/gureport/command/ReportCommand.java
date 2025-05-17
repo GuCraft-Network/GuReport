@@ -59,7 +59,7 @@ public class ReportCommand extends Command implements TabExecutor {
             }
         } else {
             if (args.length < 2) {
-                Report.sendMessageWithPrefix(reporter, "§c用法: /report <玩家> [原因]");
+                Report.sendMessageWithPrefix(reporter, "§c用法: /report <玩家> <原因>");
                 return;
             }
         }
