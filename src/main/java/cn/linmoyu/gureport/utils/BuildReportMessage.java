@@ -70,6 +70,10 @@ public class BuildReportMessage {
         // 玩家
         TextComponent reportedTC = new TextComponent("\n 玩家: "
                 + "§c" + LuckPermsUtils.getPrefix(UUID.fromString(reportedUUID)) + getPlayerName(reportedUUID, redisBungeeAPI));
+        String reportedServer = RedisBungeeAPI.getAbstractRedisBungeeAPI().getServerNameFor(UUID.fromString(reportedUUID));
+        if (reportedServer != null) {
+            reportedTC.addExtra(" §8" + reportedServer);
+        }
         reportedTC.setColor(ChatColor.WHITE);
         tc.addExtra(reportedTC);
 
@@ -195,12 +199,6 @@ public class BuildReportMessage {
             return uuidString;
         }
     }
-
-//    // 判断是否可以删除举报
-//    // 别问 问就是史山代码没精力动
-//    private static boolean canDeleteReport(ProxiedPlayer player) {
-//        return player.hasPermission(Permissions.REPORT_ADMIN_DELETE_PERMISSION);
-//    }
 
     // 格式化时间戳
     private static String formatTimestamp(String timestampStr) {
