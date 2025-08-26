@@ -11,7 +11,7 @@ import java.util.HashSet;
 public class ReportBlockCommand extends Command {
 
     public ReportBlockCommand() {
-        super("reportblock", Permissions.REPORT_STAFF_BLOCK_PERMISSION, "举报屏蔽", "jubaopingbi", "jbpb", "屏蔽举报", "pingbijubao", "pbjb");
+        super("reportblock", Permissions.REPORT_STAFF_BLOCK_PERMISSION,  "屏蔽举报", "pingbijubao");
     }
 
     @Override

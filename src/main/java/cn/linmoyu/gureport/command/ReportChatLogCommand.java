@@ -30,7 +30,7 @@ public class ReportChatLogCommand extends Command implements TabExecutor {
     private static final int PER_PAGE = config.getInt("chatlog.command-in-page");
 
     public ReportChatLogCommand() {
-        super("reportchatlog", Permissions.REPORT_STAFF_CHATLOG_PERMISSION, "举报聊天日志", "jbcl", "rpcl");
+        super("reportchatlog", Permissions.REPORT_STAFF_CHATLOG_PERMISSION, "举报聊天日志");
     }
 
     @Override

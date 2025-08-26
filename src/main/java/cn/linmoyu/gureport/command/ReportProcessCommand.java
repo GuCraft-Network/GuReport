@@ -32,7 +32,7 @@ public class ReportProcessCommand extends Command {
     private static final Map<String, ReportAction> ACTION_MAP = new ConcurrentHashMap<>();
 
     public ReportProcessCommand() {
-        super("reportprocess", Permissions.REPORT_STAFF_PROCESS_PERMISSION, "处理举报", "举报处理", "cljb", "chulijubao");
+        super("reportprocess", Permissions.REPORT_STAFF_PROCESS_PERMISSION, "处理举报");
         initializeActions();
     }
 
