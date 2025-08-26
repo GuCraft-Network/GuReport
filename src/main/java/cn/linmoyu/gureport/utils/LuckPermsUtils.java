@@ -18,7 +18,7 @@ public final class LuckPermsUtils {
         if (user == null) return "";
         String prefix = user.getCachedData().getMetaData().getPrefix();
         if (prefix == null) return "";
-        return prefix;
+        return prefix.replaceAll("&", "§");
     }
 
     public static String getSuffix(UUID uuid) {
@@ -26,7 +26,7 @@ public final class LuckPermsUtils {
         if (user == null) return "";
         String suffix = user.getCachedData().getMetaData().getSuffix();
         if (suffix == null) return "";
-        return suffix;
+        return suffix.replaceAll("&", "§");
     }
 
     public static User getUser(UUID uuid) {
